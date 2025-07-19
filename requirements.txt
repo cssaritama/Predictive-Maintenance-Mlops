@@ -1,0 +1,13 @@
+fastapi
+uvicorn[standard]
+mlflow
+scikit-learn
+pandas
+prefect
+evidently
+prometheus-client
+pytest
+black
+flake8
+isort
+pre-commit
