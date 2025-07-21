@@ -1,4 +1,1 @@
-# Placeholder for monitoring with Evidently and Prometheus
-
-def monitor():
-    pass
+# monitoring.py - contenido de ejemplo

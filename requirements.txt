@@ -1,13 +1,8 @@
-fastapi
-uvicorn[standard]
+# Dependencias
 mlflow
-scikit-learn
-pandas
 prefect
+fastapi
+scikit-learn
 evidently
-prometheus-client
-pytest
-black
-flake8
-isort
-pre-commit
+prometheus_client
+...
