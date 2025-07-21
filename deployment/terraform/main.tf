@@ -1,1 +1,0 @@
-# Terraform config de ejemplo

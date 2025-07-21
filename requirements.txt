@@ -1,8 +1,13 @@
-# Dependencias
-mlflow
-prefect
 fastapi
+uvicorn[standard]
+mlflow
 scikit-learn
+pandas
+prefect
 evidently
-prometheus_client
-...
+prometheus-client
+pytest
+black
+flake8
+isort
+pre-commit
