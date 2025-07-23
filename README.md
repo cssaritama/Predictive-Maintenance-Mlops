@@ -51,7 +51,7 @@ flowchart TD
     F --> G[Prediction Service]
     G --> H[Monitoring Dashboard]
     H --> I[Alerting System]
-
+```mermaid
 
 ## ⚙️ End-to-End MLOps Pipeline
 
