@@ -275,7 +275,12 @@ make run_pipeline        # Execute Prefect training flow
 
 ## 📬 Feedback
 
-Special THANKS to Alexey Grigorev and the rest of the DataTalks team for helping on slack and offering the opportunity to do this course.
+<span style="color: #6e6e6e; font-size: 0.9em; font-style: italic;">
+
+*Acknowledgments*: We extend our sincere gratitude to Alexey Grigorev and the DataTalks Club team for their expert guidance, valuable Slack support, and for creating this exceptional learning opportunity through the MLOps course.
+
+</span>
+
 ---
 
 ## 📜 License
