@@ -54,13 +54,8 @@ flowchart TD
 ```
 
 ## ⚙️ End-to-End MLOps Pipeline
-
-# End-to-End MLOps Pipeline for Predictive Maintenance
-
 <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; align-items: start;">
-
 <div>
-
 ## Architecture Diagram
 ```mermaid
 flowchart LR
