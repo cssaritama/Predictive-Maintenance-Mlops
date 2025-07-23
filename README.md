@@ -81,6 +81,7 @@ flowchart TD
     end
 
     L1 --> D1
+```
 ---
 
 ## 🗂️ Project Structure
