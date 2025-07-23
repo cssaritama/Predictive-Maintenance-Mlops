@@ -60,11 +60,11 @@ flowchart TD
     subgraph Data_Pipeline["Data Pipeline"]
         A1[Raw Sensor Data] --> B1[Data Preprocessing]
         B1 --> C1[Feature Engineering]
-        C1 --> D1[Model Training\n(MLflow)]
+        C1 --> D1[Model Training (MLflow)]
     end
 
     subgraph Experiment_Tracking["Experiment Tracking"]
-        D1 --> E1[MLflow Tracking &\nLogging]
+        D1 --> E1[MLflow Tracking and Logging]
         E1 --> F1[Model Registry]
     end
 
@@ -74,10 +74,10 @@ flowchart TD
     end
 
     subgraph Monitoring["Monitoring"]
-        H1 --> I1[Real-Time\nInference Logs]
-        I1 --> J1[Model Metrics\n(Evidently)]
+        H1 --> I1[Real-Time Inference Logs]
+        I1 --> J1[Model Metrics (Evidently)]
         J1 --> K1[Drift Detection]
-        K1 --> L1[Conditional Retraining\n(Prefect)]
+        K1 --> L1[Conditional Retraining (Prefect)]
     end
 
     L1 --> D1
