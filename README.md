@@ -55,33 +55,37 @@ flowchart TD
 
 ## ⚙️ End-to-End MLOps Pipeline
 
+# End-to-End MLOps Pipeline for Predictive Maintenance
+
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; align-items: start;">
+
+<div>
+
+## Architecture Diagram
 ```mermaid
-flowchart TD
-    subgraph DataPipeline["Data Pipeline"]
-        A1[Raw Sensor Data] --> B1[Data Validation]
-        B1 --> C1[Feature Engineering]
-        C1 --> D1[Model Training]
+flowchart LR
+    subgraph DP["1. Data Pipeline"]
+        A[Raw Sensors] --> B[Validation]
+        B --> C[Feature Engineering]
     end
-
-    subgraph ExperimentTracking["Model Management"]
-        D1 --> E1[MLflow Tracking Server]
-        E1 --> F1[Model Registry]
+    
+    subgraph MT["2. Model Training"]
+        C --> D[XGBoost]
+        D --> E[MLflow Tracking]
     end
-
-    subgraph Deployment["Production Deployment"]
-        F1 --> G1[Docker Containerization]
-        G1 --> H1[FastAPI Microservice]
+    
+    subgraph DP["3. Deployment"]
+        E --> F[Docker]
+        F --> G[FastAPI]
     end
-
-    subgraph Monitoring["Operational Monitoring"]
-        H1 --> I1[Prediction Logging]
-        I1 --> J1[Performance Metrics]
-        J1 --> K1[Drift Detection]
-        K1 --> L1[Retraining Trigger]
+    
+    subgraph MO["4. Monitoring"]
+        G --> H[Prometheus]
+        H --> I[Drift Detection]
+        I --> J[Retraining]
     end
-
-    L1 --> D1
-```
+    
+    J --> D
 
 ## 🗂️ Project Structure
 
