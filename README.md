@@ -55,28 +55,29 @@ flowchart TD
 
 ## ⚙️ End-to-End MLOps Pipeline
 
-graph TD
-    subgraph Data Pipeline
+```mermaid
+flowchart TD
+    subgraph Data_Pipeline["Data Pipeline"]
         A1[Raw Sensor Data] --> B1[Data Preprocessing]
         B1 --> C1[Feature Engineering]
-        C1 --> D1[Model Training (MLflow)]
+        C1 --> D1[Model Training\n(MLflow)]
     end
 
-    subgraph Experiment Tracking
-        D1 --> E1[MLflow Tracking & Logging]
+    subgraph Experiment_Tracking["Experiment Tracking"]
+        D1 --> E1[MLflow Tracking &\nLogging]
         E1 --> F1[Model Registry]
     end
 
-    subgraph Deployment
+    subgraph Deployment["Deployment"]
         F1 --> G1[Docker Image Build]
         G1 --> H1[FastAPI Web Service]
     end
 
-    subgraph Monitoring
-        H1 --> I1[Real-Time Inference Logs]
-        I1 --> J1[Model Metrics (Evidently)]
+    subgraph Monitoring["Monitoring"]
+        H1 --> I1[Real-Time\nInference Logs]
+        I1 --> J1[Model Metrics\n(Evidently)]
         J1 --> K1[Drift Detection]
-        K1 --> L1[Conditional Retraining (Prefect)]
+        K1 --> L1[Conditional Retraining\n(Prefect)]
     end
 
     L1 --> D1
