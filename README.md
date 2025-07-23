@@ -11,8 +11,6 @@ This project demonstrates the full lifecycle of a machine learning solution usin
 
 The goal of this project is to create a predictive maintenance system that analyzes sensor data from industrial equipment to forecast potential failures before they happen. This system helps reduce downtime, optimize maintenance schedules, and save operational costs.
 
-# Industrial Predictive Maintenance MLOps Platform
-
 ## 🎯 Project Objectives
 This predictive maintenance solution addresses critical industrial operational challenges through machine learning and MLOps best practices:
 
@@ -41,8 +39,6 @@ This predictive maintenance solution addresses critical industrial operational c
 | Inference Latency (p95) | <200ms | Load testing |
 | Model Retraining Frequency | Weekly | Data drift detection |
 
-# Industrial Predictive Maintenance MLOps Platform
-
 ## Technical Architecture
 
 ```mermaid
@@ -55,6 +51,36 @@ flowchart TD
     F --> G[Prediction Service]
     G --> H[Monitoring Dashboard]
     H --> I[Alerting System]
+
+
+## ⚙️ End-to-End MLOps Pipeline
+
+```mermaid
+graph TD
+    subgraph Data Pipeline
+        A[Raw Sensor Data] --> B[Data Preprocessing]
+        B --> C[Feature Engineering]
+        C --> D[Model Training (MLflow)]
+    end
+
+    subgraph Experiment Tracking
+        D --> E[MLflow Tracking & Logging]
+        E --> F[Model Registry]
+    end
+
+    subgraph Deployment
+        F --> G[Docker Image Build]
+        G --> H[FastAPI Web Service]
+    end
+
+    subgraph Monitoring
+        H --> I[Real-Time Inference Logs]
+        I --> J[Model Metrics (Evidently)]
+        J --> K[Drift Detection]
+        K --> L[Conditional Retraining (Prefect)]
+    end
+
+    L --> D
 
 ---
 
