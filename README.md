@@ -41,7 +41,10 @@ This predictive maintenance solution addresses critical industrial operational c
 | Inference Latency (p95) | <200ms | Load testing |
 | Model Retraining Frequency | Weekly | Data drift detection |
 
+# Industrial Predictive Maintenance MLOps Platform
+
 ## Technical Architecture
+
 ```mermaid
 flowchart TD
     A[IoT Sensors] --> B[Data Ingestion]
@@ -50,7 +53,7 @@ flowchart TD
     D --> E[Model Training]
     E --> F[Model Registry]
     F --> G[Prediction Service]
-    G --> H[Monitoring]
+    G --> H[Monitoring Dashboard]
     H --> I[Alerting System]
 
 ---
