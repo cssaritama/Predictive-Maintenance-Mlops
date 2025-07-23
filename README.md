@@ -39,7 +39,9 @@ This predictive maintenance solution addresses critical industrial operational c
 | Inference Latency (p95) | <200ms | Load testing |
 | Model Retraining Frequency | Weekly | Data drift detection |
 
-## Technical Architecture
+
+````markdown
+## 🏗️ Technical Architecture
 
 ```mermaid
 flowchart TD
@@ -51,7 +53,6 @@ flowchart TD
     F --> G[Prediction Service]
     G --> H[Monitoring Dashboard]
     H --> I[Alerting System]
-```mermaid
 
 ## ⚙️ End-to-End MLOps Pipeline
 
