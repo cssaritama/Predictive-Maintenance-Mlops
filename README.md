@@ -11,44 +11,39 @@ This project demonstrates the full lifecycle of a machine learning solution usin
 
 The goal of this project is to create a predictive maintenance system that analyzes sensor data from industrial equipment to forecast potential failures before they happen. This system helps reduce downtime, optimize maintenance schedules, and save operational costs.
 
-## 🎯 Project Objectives
+# Industrial Predictive Maintenance MLOps Platform
 
+## 🎯 Project Objectives
 This predictive maintenance solution addresses critical industrial operational challenges through machine learning and MLOps best practices:
 
-### Core Value Propositions
+**Core Value Propositions:**
 
 1. **Failure Prevention**
-   - Forecast equipment failures 24–72 hours in advance with **92% accuracy**
-   - Reduce unplanned downtime by **30–40%**
+   - Forecast equipment failures 24-72 hours in advance with 92% accuracy
+   - Reduce unplanned downtime by 30-40%
    - Minimize secondary damage from catastrophic failures
 
 2. **Maintenance Optimization**
-   - Enable **condition-based** maintenance scheduling
+   - Enable condition-based maintenance scheduling
    - Prioritize high-risk equipment interventions
-   - Reduce spare parts inventory costs by **15–20%**
+   - Reduce spare parts inventory costs by 15-20%
 
 3. **Operational Intelligence**
-   - Provide **explainable** failure root cause analysis
-   - Track equipment health **degradation trends**
-   - Generate **AI-powered** maintenance recommendations
+   - Provide explainable failure root cause analysis
+   - Track equipment health degradation trends
+   - Generate AI-powered maintenance recommendations
 
----
+**Technical Success Metrics:**
+| Metric | Target | Measurement Protocol |
+|--------|--------|----------------------|
+| Prediction Accuracy (F1) | ≥0.90 | Holdout test set |
+| False Positive Rate | <5% | Production monitoring |
+| Inference Latency (p95) | <200ms | Load testing |
+| Model Retraining Frequency | Weekly | Data drift detection |
 
-## 📈 Technical Success Metrics
-
-| Metric                      | Target  | Measurement Protocol      |
-|----------------------------|---------|---------------------------|
-| Prediction Accuracy (F1)   | ≥ 0.90  | Holdout test set          |
-| False Positive Rate (FPR)  | < 5%    | Production monitoring     |
-| Inference Latency (p95)    | < 200ms | Load testing              |
-| Model Retraining Frequency | Weekly  | Data drift detection      |
-
----
-
-## 🏗️ Technical Architecture
-
+## Technical Architecture
 ```mermaid
-graph TD
+flowchart TD
     A[IoT Sensors] --> B[Data Ingestion]
     B --> C[Stream Processing]
     C --> D[Feature Store]
