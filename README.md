@@ -40,9 +40,7 @@ This predictive maintenance solution addresses critical industrial operational c
 | Model Retraining Frequency | Weekly | Data drift detection |
 
 
-````markdown
 ## 🏗️ Technical Architecture
-
 ```mermaid
 flowchart TD
     A[IoT Sensors] --> B[Data Ingestion]
@@ -53,6 +51,7 @@ flowchart TD
     F --> G[Prediction Service]
     G --> H[Monitoring Dashboard]
     H --> I[Alerting System]
+```
 
 ## ⚙️ End-to-End MLOps Pipeline
 
