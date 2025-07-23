@@ -86,6 +86,9 @@ flowchart LR
     end
     
     J --> D
+```
+
+---
 
 ## 🗂️ Project Structure
 
