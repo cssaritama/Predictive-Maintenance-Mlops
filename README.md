@@ -58,26 +58,26 @@ flowchart TD
 ```mermaid
 flowchart TD
     subgraph DataPipeline["Data Pipeline"]
-        A1[Raw Sensor Data] --> B1[Data Preprocessing]
+        A1[Raw Sensor Data] --> B1[Data Validation]
         B1 --> C1[Feature Engineering]
         C1 --> D1[Model Training]
     end
 
-    subgraph ExperimentTracking["Experiment Tracking"]
-        D1 --> E1[MLflow Tracking]
+    subgraph ExperimentTracking["Model Management"]
+        D1 --> E1[MLflow Tracking Server]
         E1 --> F1[Model Registry]
     end
 
-    subgraph Deployment["Deployment"]
-        F1 --> G1[Docker Build]
-        G1 --> H1[FastAPI Service]
+    subgraph Deployment["Production Deployment"]
+        F1 --> G1[Docker Containerization]
+        G1 --> H1[FastAPI Microservice]
     end
 
-    subgraph Monitoring["Monitoring"]
-        H1 --> I1[Inference Logs]
-        I1 --> J1[Metrics]
+    subgraph Monitoring["Operational Monitoring"]
+        H1 --> I1[Prediction Logging]
+        I1 --> J1[Performance Metrics]
         J1 --> K1[Drift Detection]
-        K1 --> L1[Retraining]
+        K1 --> L1[Retraining Trigger]
     end
 
     L1 --> D1
