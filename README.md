@@ -54,8 +54,11 @@ flowchart TD
 ```
 
 ## ⚙️ End-to-End MLOps Pipeline
+
 <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; align-items: start;">
+
 <div>
+   
 ## Architecture Diagram
 ```mermaid
 flowchart LR
