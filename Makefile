@@ -29,3 +29,18 @@ docker-run:
 clean:
 	find . -type f -name '*.pyc' -delete
 	find . -type d -name '__pycache__' -delete
+
+
+# ------------------------
+# 🧹 Code Quality with Pre-commit
+# ------------------------
+
+# Install pre-commit and set up git hook
+precommit-init:
+	pip install pre-commit
+	pre-commit install
+	echo "✅ Pre-commit installed and configured"
+
+# Run all pre-commit hooks manually
+precommit-run:
+	pre-commit run --all-files
