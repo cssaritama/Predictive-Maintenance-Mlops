@@ -1,6 +1,8 @@
 
 # 🛠️ Predictive Maintenance MLOps
 
+> **Status:** MLOps Zoomcamp 2025 project. Completed; last updated July 2025. Not actively maintained.
+
 **An end-to-end MLOps project for detecting industrial equipment failures using telemetry sensor data.**
 
 This project demonstrates the full lifecycle of a machine learning solution using MLOps best practices: from data preparation and model training to deployment, monitoring, and CI/CD automation.
